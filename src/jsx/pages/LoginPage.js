@@ -32,10 +32,11 @@ export default class LoginPage extends Component {
     /* ---------- Actions ---------- */
 
     login() {
-
-
+        this.context.router.push({
+            pathname: '/home',
+            state: {email: "josh"}
+        })
     }
-
 
 
     /* ---------- Actions ---------- */
