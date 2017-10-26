@@ -33,7 +33,14 @@ export default class RegisterPage extends Component {
     /* ---------- Actions ---------- */
 
     register() {
-
+        fetch("https://boiling-fortress-21285.herokuapp.com/api/register").then(response => {
+            return response.json()
+        }).then(json => {
+            console.log(json);
+            this.setState({time : json.Date})
+        }).catch((error) => {
+            console.error(error);
+        })
     }
 
 

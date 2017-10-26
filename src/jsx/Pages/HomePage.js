@@ -8,7 +8,7 @@ export default class HomePage extends React.Component {
             <div>
 
                 <br/>
-                <h1>Swiper No Swiping</h1>
+                <h1>Welcome, {this.props.email}!</h1>
                 <br/>
 
                 <Clock/>
