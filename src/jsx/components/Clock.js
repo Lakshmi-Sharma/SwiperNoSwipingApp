@@ -32,7 +32,8 @@ export default class Clock extends React.Component {
     render() {
         return (
             <p className="App-clock">
-                Hello, World!<br/>
+                Hello, World!
+                <br/>
                 The time is {this.state.time}.
             </p>
         );

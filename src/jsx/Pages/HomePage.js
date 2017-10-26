@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Clock from "../Clock.js"
+import Clock from "../components/Clock.js"
 
 export default class HomePage extends React.Component {
     render() {
@@ -8,7 +8,7 @@ export default class HomePage extends React.Component {
             <div>
 
                 <br/>
-                <h1>Swiper No Swiping - Time Edition</h1>
+                <h1>Swiper No Swiping</h1>
                 <br/>
 
                 <Clock/>
@@ -17,4 +17,3 @@ export default class HomePage extends React.Component {
         )
     }
 }
-
