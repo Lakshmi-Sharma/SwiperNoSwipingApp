@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 import "./AuthForm.css";
 
@@ -57,6 +58,15 @@ export default class LoginPage extends Component {
                     <Button block bsSize="large" onClick={this.login} disabled={!this.validateForm()} type="submit">
                         Login
                     </Button>
+
+                    <br/><br/><br/><br/>
+                    <p>
+                        Need an account?
+                    </p>
+
+                    <Link block bsSize="small" to="/register" type="submit">
+                        Register
+                    </Link>
 
                 </form>
             </div>
